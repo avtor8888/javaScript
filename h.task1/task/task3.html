@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+</head>
+<body>
+    <h1> задача3</h1> 
+    <p>
+        Дано вартість одиниці товару і кількість. Знайти загальну вартість та ПДВ (5% від загальної вартості).
+    </p>
+    <script>
+        let x=parseInt(prompt('кол-во товара', '0'))
+        let y=parseInt(prompt('стоимость товара', '0'))
+        let t=(x*y)
+        let procent=t/100*5
+        let total=t-procent
+        document.write(` Общая cумма от товара= ${t}euro `)
+        document.write(` ПДВ от суммы$ ${procent}euro `)
+        document.write(` Общая сумма с вычетом пдв ${total}euro`)
+    </script>
+</body>
+</html>

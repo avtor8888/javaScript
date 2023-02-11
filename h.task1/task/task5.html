@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task5</title>
+</head>
+<body>
+    <h1> задача5</h1> <!---->
+    <p> Дано кількість секунд, що пройшла від початку доби. Визначити скільки це годин і хвилин.</p>
+    <script>
+        let x=parseFloat(prompt('яка зараз година?', '0'))
+        let y=x*60
+        let t=y*60
+        let secStart=parseFloat(prompt('вкажить килькiсть секуд пройшло вiд початку доби', '0'))
+        let time=secStart/60
+        let minutPervodimHour=time/60
+        document.write(` от начала суток прошло ${y.toFixed(0)} минут ;`)
+        document.write(` з початку доби прошло ${t.toFixed(0)} секунд;`)
+        document.write(`c начало суток прошло ${minutPervodimHour.toFixed(2)} часов и минут,`)
+    </script>
+</body>
+</html>
