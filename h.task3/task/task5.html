@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task5</title>
+  </head>
+  <body>
+    <h1>задача5</h1>
+    <!--<p>З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль). Вивести на екран назву транспортного засобу, яким він може керувати.
+    </p>-->
+    <!-- <script>//вопрос как лучше использовать var или let ???
+        var score =(prompt("выбирите категорию прав a b c d ", ""));
+        var result;
+        switch (score)
+        {
+            case 'a' :result ="moto";
+            break;
+            case  'b'  :result ="car";
+            break;
+            case 'c' :result ="truck";
+            break;
+            case 'd' :result ="bus";
+            break;
+            default :result =" wall ";
+            break;
+        }
+        alert(result);
+    </script>-->
+    <script>
+      let drivelicense = prompt(
+        "введите кат в правах и мы вам ответим что вы можете водить",
+        "0"
+      );
+      if (drivelicense === "a" || drivelicense === "A")
+        Result = "you can drive motobike";
+      else if (drivelicense === "b" || drivelicense === "B")
+        Result = "you can drive car";
+      else if (drivelicense === "c" || drivelicense === "C")
+        Result = "you can drive small truck";
+      document.write(Result);
+    </script>
+  </body>
+</html>
